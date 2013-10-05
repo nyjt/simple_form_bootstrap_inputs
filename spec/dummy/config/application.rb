@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "simple_form_bootstrap_inputs"
+require 'simple_form_bootstrap_inputs'
 
 module Dummy
   class Application < Rails::Application

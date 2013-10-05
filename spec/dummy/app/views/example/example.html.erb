@@ -1,4 +1,4 @@
 <%= simple_form_for @example do |f| %>
   <%= f.error_notification %>
-  <%= f.input :example, as: @input_type %>
+  <%= f.input @input_type.to_sym, as: @input_type %>
 <% end %>

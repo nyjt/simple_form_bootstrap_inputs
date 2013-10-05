@@ -5,15 +5,15 @@ Coveralls.wear!
 require File.expand_path('../dummy/config/environment.rb',  __FILE__)
 require 'rails/test_help'
 require 'rspec/rails'
-require 'webrat'
+#require 'webrat'
 
 Rails.backtrace_cleaner.remove_silencers!
 
-ActiveRecord::Migrator.migrate File.expand_path("../dummy/db/migrate/", __FILE__)
+ActiveRecord::Migrator.migrate File.expand_path('../dummy/db/migrate', __FILE__)
 
-Webrat.configure do |config|
-  config.mode = :rails
-end
+#Webrat.configure do |config|
+#  config.mode = :rails
+#end
 
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
